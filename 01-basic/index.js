@@ -6,7 +6,8 @@ let app = express ();
 // 1B SET UP VIEW ENGINE
 app.set('view engine', 'hbs');
 
-
+// 1C SET UP STATIC FOLDER
+app.use(express.static('public'));
 
 // 2. ADD ROUTES HERE
 
